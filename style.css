@@ -3,6 +3,8 @@ body {
     margin: 0 auto;
 }
 
+cssacecesc
+
 /*  ---- header ---- */ 
 
 .cointainer {
@@ -61,6 +63,23 @@ header > nav ul li {
     margin: 0 auto 135px;
 }
 
+.slogan {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    margin-top: 175px;
+}
+
+section > div h1, section > div h2 {
+    color: white;
+    margin: 0 20px;
+    line-height: 75px;
+    text-align: left;
+    letter-spacing: 5px;
+    font-size: 18px;
+    
+} 
+
 section > div h1 {
     text-transform: capitalize;
 }
@@ -69,7 +88,6 @@ section > div h2 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 * {
 	box-sizing: border-box;
 }
@@ -136,7 +154,6 @@ section > div h2 {
 .gallery-margin {
     margin: 0 0;
     padding: 0 0;
-    max-height: 180px;
     transition: 2s;
     position: relative;
 }
@@ -152,23 +169,21 @@ section > div h2 {
 .team {
     margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
-    grid-row-gap: 10px;
     margin-top: 110px;
     margin-bottom: 110px;
-    grid-auto-flow: column;
+    grid-row-gap: 20px;
 }
 
 .member {
     width: 100px;
-    height: 100px;
-    position: relative;
+    height: auto;
 }
 
 .member > img {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -230,14 +245,13 @@ section > div h2 {
     margin-top: 70px;
 }
 
-
-
 /*------ numbers ------*/
 
 .numbers {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 [class*="no-title"], [class*="no-text"]  {
     text-align: center;
     margin: 0 auto;
@@ -425,6 +439,7 @@ section > div h2 {
     .slogan {
         background-color: rgba(0, 0, 0, 0.7);
         margin-top: 175px;
+        width: 100%;
     }
     
     section > div h1, section > div h2 {
@@ -446,6 +461,113 @@ section > div h2 {
         position: static;
         display: block;
     }
+
+    .gallery-margin {
+        margin: 0 0;
+        padding: 0 0;
+        position: static;
+        display: block;
+    }
+    
+    .gallery-margin > .layer .fa {
+        font-family: Font Awesome\ 5 Free;
+        display: inline-block;
+        line-height: 80px;
+        width: 40%;
+    }
+
+    /* -------pictures section-------*/
+
+.picture-section {
+    margin-top: 30px;
+    background-color: rgb(117, 114, 114);
+    overflow: hidden;
+    height: auto;
+    padding: 0 10px;
+}
+
+.sec-pic {
+    float: none;
+    display: block;
+    height: auto;
+}
+
+.grid-title {
+    color: white;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grid-text {
+    padding: 0 0;
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.row-nest > .col-4 {
+    font-style: italic;
+}
+
+.sec-pic > img {
+    height: auto;
+    width: 100%;
+    margin: 0 0;
+    margin-top: 10px;
+}
+
+.pic-text {
+    margin-left: 0;
+}
+
+/* ---- Team ---- */
+
+.team {
+    margin: 20px 0;
+}
+
+
+/*------ numbers ------*/
+
+.numbers {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ /*-----footer----*/
+
+ .footer {
+     padding-top: 20px;
+ }
+
+ .footer-col{
+     margin-bottom: 10px;
+ }
+
+ .footer-text {
+     text-align: center;
+ }
+
+ .icon {
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ /*------footer-----*/
+
+ .line {
+     display: none;
+ }
+
+ .footer-title {
+     text-align: center;
+ }
+
 
 }
 @media (min-width: 768px) {
@@ -492,5 +614,9 @@ section > div h2 {
     .member:hover > .layer2 {
         display: block;
         background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .gallery-margin {
+        max-height: 180px;
     }
 }
